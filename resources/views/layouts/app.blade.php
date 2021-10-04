@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #e9ecef">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
@@ -39,19 +39,19 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Add Coin') }}</a>
+                            <a class="nav-link" href="/coin/create">{{ __('Add Coin') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Add NFT') }}</a>
+                            <a class="nav-link" href="/nft/create">{{ __('Add NFT') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Promote') }}</a>
+                            <a class="nav-link" href="/promote">{{ __('Promote') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Newsletter') }}</a>
+                            <a class="nav-link" href="/newsletter">{{ __('Newsletter') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('DYOR') }}</a>
+                            <a class="nav-link" href="/dyor">{{ __('DYOR') }}</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest

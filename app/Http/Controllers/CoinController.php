@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class CoinController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,7 @@ class CoinController extends Controller
      */
     public function index()
     {
-        return view('addcoin');
+        //
     }
 
     /**
@@ -24,7 +28,7 @@ class CoinController extends Controller
      */
     public function create()
     {
-        //
+        return view('addcoin');
     }
 
     /**
