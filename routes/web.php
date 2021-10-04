@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::resource('coin', CoinController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

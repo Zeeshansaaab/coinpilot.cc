@@ -38,6 +38,21 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Add Coin') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Add NFT') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Promote') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Newsletter') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('DYOR') }}</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
