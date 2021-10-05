@@ -15,6 +15,22 @@ class CreateCoinsTable extends Migration
     {
         Schema::create('coins', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('symbol');
+            $table->text('description');
+            $table->string('logo');
+            $table->string('price');
+            $table->string('market_cap');
+            $table->dateTime('launch_date');
+            $table->boolean('is_presale');
+            $table->string('binance_smart_chain');
+            $table->string('ethereum');
+            $table->string('solana');
+            $table->string('polygon');
+            $table->string('website');
+            $table->string('telegram');
+            $table->string('telegram');
+            $table->text('additional_info');
             $table->timestamps();
         });
     }
